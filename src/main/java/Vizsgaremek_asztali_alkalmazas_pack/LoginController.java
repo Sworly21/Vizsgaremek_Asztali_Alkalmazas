@@ -31,6 +31,7 @@ public class LoginController {
             alert.setContentText("Hibás felhasználónév vagy jelszó!");
             alert.showAndWait();
         }
+
     }
 
 }

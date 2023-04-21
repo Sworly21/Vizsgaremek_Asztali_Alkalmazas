@@ -1,14 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="Vizsgaremek_asztali_alkalmazas_pack.ListUsers"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vizsgaremek_asztali_alkalmazas_pack.ListUsers">
+   <children>
+      <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="Felhasználók">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView prefHeight="340.0" prefWidth="600.0" AnchorPane.topAnchor="30.0">
+                          <columns>
+                            <TableColumn prefWidth="120.0" text="Id" />
+                            <TableColumn prefWidth="120.0" text="email" />
+                              <TableColumn prefWidth="120.0" text="username" />
+                              <TableColumn prefWidth="120.0" text="password" />
+                              <TableColumn prefWidth="120.0" text="registrationDate" />
+                          </columns>
+                        </TableView>
+                        <Button layoutX="534.0" layoutY="2.0" mnemonicParsing="false" text="Bann" />
+                        <Button layoutX="474.0" layoutY="2.0" mnemonicParsing="false" text="Módosít" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Izomcsoportok">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
 </AnchorPane>
